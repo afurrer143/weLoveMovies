@@ -10,7 +10,6 @@ const reduceCritics = reduceProperties("critic_id", {
 async function list(req, res, next) {
   const isShowing = req.query.is_showing;
   if (isShowing === "true") {
-    // console.log("showing is true")
     const data = await movieService.isShowingTrue();
     res.json({ data });
   } else {

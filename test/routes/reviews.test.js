@@ -3,7 +3,7 @@ const request = require("supertest");
 const app = require("../../src/app");
 const db = require("../../src/db/connection");
 
-describe.skip("Review Routes", () => {
+describe("Review Routes", () => {
   beforeAll(() => {
     return db.migrate
       .forceFreeMigrationsLock()
